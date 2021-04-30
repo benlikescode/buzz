@@ -60,8 +60,7 @@
             while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
                 $_SESSION['usertoken'] = $row['usertoken'];
             }
-
-            echo $row['usertoken'];
+            
             header('location: /projects/buzz/');
             exit();
         }
